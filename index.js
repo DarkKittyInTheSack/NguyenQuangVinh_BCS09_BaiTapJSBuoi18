@@ -85,7 +85,7 @@ document.querySelector('.swap').addEventListener('click',function(){
 
 document.querySelector('.sortIncrease').addEventListener('click',function(){
 
-    document.getElementById('result8').innerHTML = `Mảng sau khi đổi vị trí các phần tử là : ${array.sort(function(a,b){return a-b})}`
+    document.getElementById('result8').innerHTML = `Mảng sau khi sắp xếp tăng dần là : ${array.sort(function(a,b){return a-b})}`
 })
 
 function checkElement(input){
