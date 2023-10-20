@@ -40,9 +40,14 @@ document.querySelector('.count').addEventListener('click',function(){
 
 document.querySelector('.min').addEventListener('click',function(){
 
-    array.sort(function(a,b){return a-b})
+    var min = array[0]
+    for(i = 0; i < array.length; i++){
+        if(array[i] < min){
+            min = array[i]
+        }
+    }
 
-    document.getElementById('result4').innerHTML = `Số nhỏ nhất trong mảng là : ${array[0]}`
+    document.getElementById('result4').innerHTML = `Số nhỏ nhất trong mảng là : ${min}`
 })
 
 document.querySelector('.minPlus').addEventListener('click',function(){
