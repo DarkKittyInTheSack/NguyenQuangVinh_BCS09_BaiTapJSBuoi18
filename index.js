@@ -52,12 +52,10 @@ document.querySelector('.min').addEventListener('click',function(){
 
 document.querySelector('.minPlus').addEventListener('click',function(){
 
-    array.sort(function(a,b){return a-b})
-    var min = 0;
+    var min = array[0];
     for(i = 0;  i< array.length; i++){
-        if(array[i] > 0){
+        if(array[i] < min && array[i] > 0){
             min = array[i]
-            break
         }
     }
 
