@@ -52,7 +52,7 @@ document.querySelector('.min').addEventListener('click',function(){
 
 document.querySelector('.minPlus').addEventListener('click',function(){
 
-    var min = array[0];
+    var min = Infinity;
     for(i = 0;  i< array.length; i++){
         if(array[i] < min && array[i] > 0){
             min = array[i]
